@@ -11,8 +11,10 @@ void lire_mot() {
 	ofstream sortie("mots.txt", ios::app);
 	char ligne[10000];
 	char mot_a_trouver[10000];
-	if (!entree)
+	if (!entree) {
+		
 		cout << "probleme ouverture fichier" << endl;
+	}
 	else {
 		while (!entree.eof()) {
 			espace = false;
